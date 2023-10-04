@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - npm install -g yarn
+      - yarn config set ignore-engines true
+      - yarn
+      - npm run test
